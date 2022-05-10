@@ -74,7 +74,6 @@ else:
 #TODO: Iterate through wordlists and call a new random ip every (5) attempts.
 # Two scenarios: single name iterator or multi-name iterator
 ENDPOINT = args.url
-print(ENDPOINT)
 if type(USERNAME) == str:
         if type(PASSWORD) == str:
                 new_ip = make_ip()
